@@ -1,0 +1,15 @@
+<div class="row image-list-container">
+{{#if isLoading}}
+  {{spinner-element}}
+{{else}}
+  {{#each data as |p|}}
+    <div {{action 'showModal' p}} class="col-xs-4 col-sm-4 and col-md-4">
+        <img src="{{p.fixed_height}}" class="img-responsive" />
+    </div>
+  {{/each}}
+{{/if}}
+</div>
+<div class="row pager-container">
+  {{pagination-pager scope=scope count=pageCount current=currentPage change="pageChanged" }}
+</div>
+{{yield}}

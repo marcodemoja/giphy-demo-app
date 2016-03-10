@@ -1,0 +1,20 @@
+<!-- Nav tabs -->
+<ul class="nav nav-pills" id="tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#kittens" aria-controls="kittens" role="tab" data-toggle="tab">Kittens</a></li>
+    <li role="presentation"><a href="#puppies" aria-controls="puppies" role="tab" data-toggle="tab">Puppies</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="kittens">
+        <div class="container-fluid">
+          {{image-list qSearch="kittens" data=kittens}}
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="puppies">
+        <div class="container-fluid">
+          {{image-list qSearch="puppies" data=puppies}}
+        </div>
+    </div>
+</div>
+{{yield}}

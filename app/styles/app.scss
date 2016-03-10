@@ -1,0 +1,65 @@
+@import "partials/variables";
+@import "partials/spinner-element";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  padding:0;
+  margin:0;
+  padding-top:10px;
+
+}
+h2{
+  text-align:right;
+  margin-right:25px;
+}
+.nav{
+  margin-left:15px;
+  margin-bottom:15px;
+
+  li.active > a,li.active a:hover{
+    background-color:#fff;
+    color:#2b669a;
+    border-bottom:3px solid #2b669a;
+    border-radius:0;
+  }
+  li > a,li > a:hover{
+    color:#8c8c8c;
+    background-color:#fff;
+  }
+}
+.container-fluid{
+  margin:0;
+  padding:0;
+}
+
+.tab-content {
+  color : white;
+  background-color: #efefef;
+  padding-top:12px;
+  padding:0;
+  border: 1px solid #ccc;
+  border-top:0;
+}
+.image-list-container{
+  padding:12px;
+  display:table;
+  height:600px;
+  div{
+    display:table-row;
+  }
+}
+.pager-container{
+  margin:0 auto;
+  text-align:center;
+}
+
+.autoModal.modal .modal-body{
+  max-height: none;
+  max-width:none;
+  height:auto;
+  width:auto;
+}
+
+
+
